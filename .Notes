@@ -1,0 +1,24 @@
+Initial Setup
+
+Commands:
+
+    composer create-project --prefer-dist laravel/laravel news_app_api "5.8.*"
+
+    php artisan preset bootstrap
+
+    npm install && npm run dev
+
+
+
+Add Authentication Functionality
+
+    php artisan make:observer UserObserver --model=User
+
+    php artisan make:auth (run after modifying the users migration)
+
+    php artisan migrate:fresh --seed
+
+
+
+
+
